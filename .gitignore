@@ -1,2 +1,4 @@
 /class
 /.vscode
+/basics/__pycache__
+/basics/log.py
