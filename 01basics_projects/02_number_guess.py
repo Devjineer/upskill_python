@@ -7,6 +7,7 @@ done = False
 
 def numberGuessing():
     guessesLeft = 5
+    print(score['plays']);
     score["plays"] == 0 and print(
         "I will pick a random number and you will have to guess it"
     )
@@ -35,11 +36,11 @@ def numberGuessing():
 
 
 while not done:
-    score["plays"] += 1
     numberGuessing()
+    score["plays"] += 1
     done = True if str(input("Do you want to restart? ")).lower() == "no" else False
 else:
-    print(f"Thanks for playing, you played {score['plays']} times, won {score['wins']} times and loss {score['losses']}")
+    print(f"Thanks for playing, you played {score['plays']} time{'s' if score['plays'] > 1 else ''}, won {score['wins']} times and loss {score['losses']}")
 
 """⭐ Optional Improvements
 
